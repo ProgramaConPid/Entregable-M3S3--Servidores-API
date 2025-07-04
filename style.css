@@ -87,3 +87,19 @@ button:hover {
   color: #0056b3;
   font-weight: bold;
 }
+
+.errorMessage {
+  font-size: 13px;
+  color: red;
+  padding: 5px 15px;
+  border-radius: 6px;
+  background-color: rgba(221, 117, 117, 0.199);
+}
+
+.succesMessage {
+  font-size: 13px;
+  color: green;
+  padding: 5px 15px;
+  border-radius: 6px;
+  background-color: rgba(100, 235, 100, 0.315);
+}
