@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 30px;
+  background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #444;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.btns__actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.container__results {
+  margin-top: 25px;
+  padding: 15px;
+  background-color: #e9f5ff;
+  border-radius: 6px;
+  font-size: 14px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.productInfo {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.productInfo span {
+  color: #0056b3;
+  font-weight: bold;
+}
