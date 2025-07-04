@@ -21,6 +21,7 @@ const containerResults = document.getElementById("results")
 
 btnClearProducts.addEventListener("click", clearProducts)
 
+// Async function to get the data from the server db.json
 const getData = async () => {
   
   try {
