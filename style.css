@@ -1,3 +1,4 @@
+/* General Styles */
 * {
   box-sizing: border-box;
 }
@@ -24,6 +25,7 @@ h1 {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Form Styles */
 form {
   margin-bottom: 20px;
 }
@@ -62,6 +64,7 @@ button:hover {
   gap: 10px;
 }
 
+/* Products Styles */
 .container__results {
   margin-top: 25px;
   padding: 15px;
