@@ -264,7 +264,7 @@ containerResults.addEventListener("click", async function (event) {
       .trim();
     const newName = prompt("New name for the product:", currentName);
     if (newName === null || newName.trim() === "") return;
-    const newPrice = prompt("Nuevo precio del producto:", currentPrice);
+    const newPrice = prompt("New price for the product:", currentPrice);
     if (newPrice === null || isNaN(newPrice) || newPrice <= 0) return;
     try {
       const response = await fetch(
@@ -280,7 +280,7 @@ containerResults.addEventListener("click", async function (event) {
         }
       );
       if (response.ok) {
-        alert("Producto modificado correctamente");
+        alert("Product modified successfully");
         productDiv.querySelector(
           ".productName"
         ).innerHTML = `<span>Product Name:</span> ${newName}`;
@@ -321,3 +321,5 @@ function clearProducts() {
     containerResults.innerHTML = infoMessage.textContent;
   }
 }
+
+// ! There is a small inconvenience, when adding, modifying or deleting, the page refreshes.

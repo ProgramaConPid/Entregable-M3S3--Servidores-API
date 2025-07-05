@@ -2,8 +2,8 @@
   "productos": [
     {
       "id": "1",
-      "nombre": "Mouse",
-      "precio": 1700
+      "nombre": "Teclado",
+      "precio": 1300
     },
     {
       "id": "2",
