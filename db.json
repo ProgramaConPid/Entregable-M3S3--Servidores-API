@@ -1,17 +1,17 @@
 {
   "productos": [
     {
-      "id": "3",
+      "id": "1",
       "nombre": "Mouse",
       "precio": 1700
     },
     {
-      "id": "4",
+      "id": "2",
       "nombre": "Nevera",
       "precio": 1600
     },
     {
-      "id": "5",
+      "id": "3",
       "nombre": "Lavadora",
       "precio": 2000
     }
