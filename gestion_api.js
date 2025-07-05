@@ -240,6 +240,7 @@ containerResults.addEventListener("click", async function (event) {
         if (response.ok) {
           alert("Product deleted successfully");
           productDiv.remove();
+          console.log("Product deleted successfully", productId);
         } else {
           alert("Error to delete the product");
         }
