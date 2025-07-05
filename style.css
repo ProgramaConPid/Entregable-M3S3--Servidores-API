@@ -1,4 +1,10 @@
-/* General Styles */
+/*
+  style.css
+  - Main styles for the product management app.
+  - Includes styles for forms, buttons, messages, and results area.
+*/
+
+/* Reset and general styles */
 * {
   box-sizing: border-box;
 }
@@ -25,7 +31,7 @@ h1 {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Form Styles */
+/* Styles for forms and fields */
 form {
   margin-bottom: 20px;
 }
@@ -43,6 +49,7 @@ input {
   border-radius: 4px;
 }
 
+/* Main buttons */
 button {
   margin-top: 15px;
   padding: 10px 15px;
@@ -64,14 +71,13 @@ button:hover {
   gap: 10px;
 }
 
-/* Products Styles */
+/* Results area and products */
 .container__results {
   margin-top: 25px;
   padding: 15px;
   background-color: #e9f5ff;
   border-radius: 6px;
   font-size: 14px;
-
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -88,6 +94,7 @@ button:hover {
   font-weight: bold;
 }
 
+/* Error and success messages */
 .errorMessage {
   font-size: 13px;
   color: red;
@@ -102,4 +109,46 @@ button:hover {
   padding: 5px 15px;
   border-radius: 6px;
   background-color: rgba(100, 235, 100, 0.315);
+}
+
+/* Responsive design for forms and container */
+@media (max-width: 700px) {
+  .container {
+    max-width: 98vw;
+    padding: 10px;
+  }
+  form {
+    padding: 10px 0;
+  }
+  .btns__actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 5px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  form {
+    margin-bottom: 15px;
+  }
+  input {
+    font-size: 15px;
+    padding: 7px;
+  }
+  button {
+    width: 100%;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .container__results {
+    padding: 7px;
+    font-size: 13px;
+  }
+  .productInfo {
+    padding: 10px;
+  }
 }

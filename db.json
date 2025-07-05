@@ -1,24 +1,19 @@
 {
   "productos": [
     {
-      "id": "1",
-      "nombre": "Laptop",
-      "precio": 1500
-    },
-    {
-      "id": "2",
-      "nombre": "Teclado",
-      "precio": 1000
-    },
-    {
       "id": "3",
       "nombre": "Mouse",
-      "precio": 700
+      "precio": 1700
     },
     {
-      "id": 4,
-      "nombre": "Play Station 4",
-      "precio": 2300
+      "id": "4",
+      "nombre": "Nevera",
+      "precio": 1600
+    },
+    {
+      "id": "5",
+      "nombre": "Lavadora",
+      "precio": 2000
     }
   ]
 }

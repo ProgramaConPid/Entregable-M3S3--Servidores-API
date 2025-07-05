@@ -1,53 +1,67 @@
+<!--
+  index.html
+  - Main page for product management.
+  - Contains forms to add and search products.
+  - Results area to display registered products.
+-->
 <!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
 
-    <!-- CSS File -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css" />
     <title>Gestión de Productos</title>
   </head>
   <body>
     <h1 class="mainTitle">Gestión de Productos</h1>
 
     <div class="container">
-      <!-- Form for add new products -->
+      <!-- Form to add new products -->
       <form id="formAdd">
-        <h3 class="formTitle">Agregar Producto</h3>
+        <h3 class="formTitle">Add Product</h3>
         <label for="productId">ID:</label>
-        <input type="number" id="productId" placeholder="Ejp: (5)"/>
+        <input type="number" id="productId" placeholder="E.g.: (5)" />
+        <p id="errorIdMessage"></p>
 
-        <label for="productName">Nombre:</label>
-        <input type="text" id="productName" placeholder="Ejp: (Play Station)"/>
+        <label for="productName">Name:</label>
+        <input
+          type="text"
+          id="productName"
+          placeholder="E.g.: (Play Station)"
+        />
+        <p id="errorNameMessage"></p>
 
-        <label for="productPrice">Precio:</label>
-        <input type="number" id="productPrice" placeholder="Ejp: (2500)"/>
+        <label for="productPrice">Price:</label>
+        <input type="number" id="productPrice" placeholder="E.g.: (2500)" />
+        <p id="errorPriceMessage"></p>
 
-        <button type="submit" id="btnAddProduct">Agregar Producto</button>
+        <button type="submit" id="btnAddProduct">Add Product</button>
       </form>
 
-      <!-- Form for search a specific product -->
+      <!-- Form to search for a product -->
       <form id="formSearch">
-        <h3 class="searchTitle">Buscar Producto</h3>
-        <label for="searchName">Nombre del producto:</label>
-        <input type="text" id="searchName" placeholder="Ejp: Teclado">
+        <h3 class="searchTitle">Search Product</h3>
+        <label for="searchName">Product name:</label>
+        <input type="text" id="searchName" placeholder="E.g.: Keyboard" />
         <p id="searchMessage"></p>
 
-        <button type="submit" id="searchProduct">Buscar</button>
+        <button type="submit" id="searchProduct">Search</button>
       </form>
 
-      <!-- Actions Buttons -->
+      <!-- Main action buttons -->
       <div class="btns__actions">
-        <button id="btnShowProducts">Mostrar todos</button>
-        <button id="btnClearProducts">Limpiar resultados</button>
+        <button id="btnShowProducts">Show all</button>
+        <button id="btnClearProducts">Clear results</button>
       </div>
 
-      <!-- Results Area -->
+      <!-- Results area for products -->
       <div class="container__results" id="results">
-        <!-- Here will appear the results -->
+        <!-- Results will appear here -->
       </div>
     </div>
 
+    <!-- Main app logic script -->
     <script src="./gestion_api.js"></script>
   </body>
 </html>
